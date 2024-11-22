@@ -20,4 +20,4 @@ jobs:
               issue_number: context.issue.number,
               assignees: ['kaitlyncornish01']
             })
-          github-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
