@@ -12,7 +12,7 @@ jobs:
         uses: actions/github-script@v5
         with:
           script: |
-            github.issues.addAssignees({
+            github.rest.issues.addAssignees({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
